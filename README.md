@@ -56,8 +56,12 @@ contract GoalKeeper {
 ```
 
 ✅ Deployment Info (Core Testnet)
+
 Field	Details
-Transaction Hash	0xd76a9a...114d23
+
+Transaction Hash:
+0xd76a9a733136f20ac089d9196a76b3ad52dcc160f27d6c3e6dcc4db20c114d23
+
 Status	✅ Success
 Block	5015450 (158 Block Confirmations)
 Timestamp	2025-05-26 08:32:24 UTC
