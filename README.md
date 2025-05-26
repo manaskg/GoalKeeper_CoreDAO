@@ -53,3 +53,7 @@ goalKeeper.commitGoal{ value: 1 ether }(
   7, // days
   0xVerifierAddress
 );
+
+![Screenshot 2025-05-26 141454](https://github.com/user-attachments/assets/8bc80e11-6a16-499c-bd17-37087d965ef3)
+
+
