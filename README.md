@@ -59,6 +59,7 @@ contract GoalKeeper {
 
 Field	Details
 
+
 Transaction Hash:
 0xd76a9a733136f20ac089d9196a76b3ad52dcc160f27d6c3e6dcc4db20c114d23
 
@@ -66,7 +67,13 @@ Status	✅ Success
 Block	5015450 (158 Block Confirmations)
 Timestamp	2025-05-26 08:32:24 UTC
 Deployer Address	0x143af6e807e9de2823eaefe83f2c0b7df1486e50
-Contract Address	0xC4AFC1...B5E23a25 (Created)
+
+
+
+contract address	0xd9145CCE52D386f254917e481eB44e9943F39138
+
+
+
 Value Sent	0.00001 tCORE2
 Txn Fee	0.01768209 tCORE2
 
