@@ -69,7 +69,7 @@ contract GoalKeeper {
 
 ---
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 Layer	Technology
 Blockchain	Core Blockchain (Testnet)
 Smart Contract	Solidity
@@ -78,23 +78,23 @@ Explorer	BTCS Scan (Testnet)
 
 ---
 
-📦 Contract Deployment Details
+## 📦 Contract Deployment Details
 Field	Value
-Transaction Hash	0x95157d...ea026
-Contract Address	0x95c7e10a0627181df5e77e5290ba8f9e9f619ab3
-Network	Core Testnet
-Deployment Date	May 26, 2025
-Gas Fee	~0.01 tCORE2
+- **Transaction Hash**	0x95157da347c407d207dfa5f709ccf3a21650fa343686122ea4d8b8289b8ea026
+- **Contract Address**	0x95c7e10a0627181df5e77e5290ba8f9e9f619ab3
+- **Network	Core Testnet**
+- **Deployment Date	May 26, 2025**
+- **Gas Fee	~0.01 tCORE2**
 
 ---
 
-🖼️ Screenshot of Transaction
+## 🖼️ Screenshot of Transaction
 
 ![Screenshot 2025-05-26 141454](https://github.com/user-attachments/assets/b72c15da-fd6d-4228-badc-7960b286e617)
 
 ---
 
-🧱 Roadmap & Features (Planned)
+## 🧱 Roadmap & Features (Planned)
  Stake-based goal commitment system
 
  Success/failure tracking
@@ -111,5 +111,5 @@ Gas Fee	~0.01 tCORE2
 
  ---
 
-🛡️ License
+## 🛡️ License
 This project is licensed under the MIT License — free to use, build upon, and improve.
