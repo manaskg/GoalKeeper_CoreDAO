@@ -1,33 +1,44 @@
-# 🥅 GoalKeeper – A Gamified Savings Smart Contract
+<h1 align="center">🥅 GoalKeeper</h1>
 
-**GoalKeeper** is a decentralized habit accountability and savings platform that helps users build good habits through financial stakes. If you fail to hit your goal, your staked amount gets forfeited (either to a beneficiary or a burn address). It uses smart contracts to automate commitment, tracking, and consequences.
-
----
-
-## 🚀 Features
-
-- 💸 Stake crypto to commit to a habit or goal
-- ⏰ Set deadline by timestamp
-- ✅ Claim funds on success
-- ❌ Forfeit funds on failure
-- 🧾 Transparent and immutable via blockchain
-- 🧪 Deployed on Core Testnet
+<p align="center">
+  <b>A gamified, smart contract-based savings challenge to help you stick to your habits.</b><br>
+  <i>"Discipline is remembering what you want." - GoalKeeper remembers for you — in code."</i>
+</p>
 
 ---
 
-## 🛠️ Technologies Used
+## 📌 What is GoalKeeper?
 
-- Solidity (Smart Contracts)
-- Remix IDE
-- Core Blockchain (Testnet)
-- MetaMask
+**GoalKeeper** is a decentralized, autonomous savings accountability tool built on smart contracts. Users commit to a habit or goal and lock up funds as a stake. If they meet their target within the deadline, they can reclaim their money. If not, the funds are forfeited, providing a real-world consequence to reinforce positive habits.
 
 ---
 
-## 📜 Smart Contract Overview
+## 🔧 How It Works
+
+1. **Set a Goal** – Define a habit or target (e.g., daily jog, meditation, coding streak).
+2. **Stake Funds** – Lock up a small amount of crypto as a commitment.
+3. **Deadline Starts** – A timer begins for you to achieve your goal.
+4. **Proof of Completion** – Call a success function when you hit the goal.
+5. **Outcome**  
+   - ✅ Success: You get your staked funds back.  
+   - ❌ Failure: Funds are forfeited (burnt or sent to a beneficiary).
+
+---
+
+## 💡 Use Cases
+
+- Fitness challenges
+- Study streaks
+- No-junk-food goals
+- Writing or productivity sprints
+- Habit tracking with financial accountability
+
+---
+
+## ⚙️ Smart Contract Overview
 
 ```solidity
-// Sample snippet
+// Pseudocode structure
 contract GoalKeeper {
     address public owner;
     uint public goalAmount;
@@ -46,56 +57,59 @@ contract GoalKeeper {
     }
 
     function withdraw() public {
-        require(block.timestamp >= deadline, "Too early");
+        require(block.timestamp >= deadline, "Deadline not reached");
         if (goalMet) {
             payable(owner).transfer(goalAmount);
+        } else {
+            // Funds can be burned or sent to another address
         }
-        // Else funds remain locked or can be sent to burn/charity (extension idea)
     }
 }
 ```
 
-✅ Deployment Info (Core Testnet)
+---
 
-Field	Details
+🛠️ Tech Stack
+Layer	Technology
+Blockchain	Core Blockchain (Testnet)
+Smart Contract	Solidity
+Deployment	Remix + MetaMask
+Explorer	BTCS Scan (Testnet)
 
+---
 
-Transaction Hash:
-0xd76a9a733136f20ac089d9196a76b3ad52dcc160f27d6c3e6dcc4db20c114d23
+📦 Contract Deployment Details
+Field	Value
+Transaction Hash	0x95157d...ea026
+Contract Address	0x95c7e10a0627181df5e77e5290ba8f9e9f619ab3
+Network	Core Testnet
+Deployment Date	May 26, 2025
+Gas Fee	~0.01 tCORE2
 
-Status	✅ Success
-Block	5015450 (158 Block Confirmations)
-Timestamp	2025-05-26 08:32:24 UTC
-Deployer Address	0x143af6e807e9de2823eaefe83f2c0b7df1486e50
+---
 
+🖼️ Screenshot of Transaction
 
+![Screenshot 2025-05-26 141454](https://github.com/user-attachments/assets/b72c15da-fd6d-4228-badc-7960b286e617)
 
-contract address	0xd9145CCE52D386f254917e481eB44e9943F39138
+---
 
+🧱 Roadmap & Features (Planned)
+ Stake-based goal commitment system
 
+ Success/failure tracking
 
-Value Sent	0.00001 tCORE2
-Txn Fee	0.01768209 tCORE2
+ Add beneficiary for forfeited funds
 
-📷 Screenshot of Deployment
-![Screenshot 2025-05-26 141454](https://github.com/user-attachments/assets/394509de-8b0c-4058-8125-f5392dfca52c)
+ Habit logging through front-end interface
 
+ NFT badges or rewards
 
-📌 TODOs & Enhancements
-Add streak-based bonus system
+ Daily streak tracking and leaderboard
 
-Community leaderboard
+ Social challenge creation (peer group goals)
 
-Allow specifying beneficiary (charity or friend) for forfeited funds
+ ---
 
-UI using React or Flutter frontend
-
-🧠 Inspiration
-Behavioral economists suggest that commitment devices help people stick to goals. GoalKeeper implements this using decentralized, tamper-proof smart contracts.
-
-📄 License
-This project is licensed under the MIT License.
-
-👨‍💻 Author
-Manas
-🌐 LinkedIn | 🧠 Passionate about web3, dApps, and social impact tech.
+🛡️ License
+This project is licensed under the MIT License — free to use, build upon, and improve.
