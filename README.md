@@ -105,7 +105,7 @@ Field	Value
 
  NFT badges or rewards
 
- Daily streak tracking and leaderboard
+ Daily streak tracking and leaderboard.
 
  Social challenge creation (peer group goals)
 
