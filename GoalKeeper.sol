@@ -55,7 +55,7 @@ contract GoalKeeper {
         require(block.timestamp > goal.deadline, "Deadline not passed.");
 
         goal.status = Status.Failed;
-        // Forfeit to owner (or could be a charity address)
+        // Forfeit to owner 
         payable(owner).transfer(goal.amount);
     }
 
